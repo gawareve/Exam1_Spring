@@ -198,8 +198,8 @@ def problem3(string_of_characters):
     ints=0
     chars=0
     reverse=''
-    print (string_of_characters)
-    print(len(string_of_characters))
+    print ('String entered: ',string_of_characters)
+    print('Length of string: ',len(string_of_characters))
     for k in range (len(string_of_characters)):
         if  string_of_characters[k].isnumeric()==True:
             ints=ints+1
@@ -207,11 +207,11 @@ def problem3(string_of_characters):
 
             if string_of_characters[k]!=' ':
                 chars=chars +1
-    print(chars)
-    print(ints)
+    print('Number of alphabetic characters: ',chars)
+    print('Number of digits: ',ints)
     for k in range(len(string_of_characters)-1,-1,-1):
         reverse=reverse+string_of_characters[k]
-    print(reverse)
+    print('Reversed string is: ',reverse)
     if reverse==string_of_characters:
         print('The user entered a palindrome')
     else:
